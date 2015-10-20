@@ -1,4 +1,4 @@
-require "trix/version"
+require 'trix/version'
 
 module Trix
 end
