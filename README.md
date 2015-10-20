@@ -1,24 +1,54 @@
 # Trix
 
+[![Build Status](https://travis-ci.org/maclover7/trix.svg)](https://travis-ci.org/maclover7/trix)
+
 Want to include Basecamp's awesome [Trix WYSIWYG
 editor](http://trix-editor.org) in your Ruby on Rails application?
 You've come to the right place!
 
-## Installation
+Please see the appropriate guide for your environment of choice:
 
-Add this line to your application's Gemfile and bundle:
+* [Ruby on Rails](#a-ruby-on-rails).
+
+### a. Ruby on Rails
+
+`trix` is easy to drop into Rails with the asset pipeline.
+
+In your Gemfile you need to add the `trix` gem.
 
 ```ruby
 gem 'trix'
 ```
 
-## Usage
+`bundle install` and restart your server to make the files available through the pipeline.
 
-TODO: Write usage instructions here
+Import Trix styles in `app/assets/stylesheets/application.css`:
+
+```css
+*= require trix
+```
+
+Require Trix Javascript magic in `app/assets/javascripts/application.js`:
+
+```js
+//= require trix
+```
+
+Finally, any place where you would like to use the Trix editor in your
+forms, just use the `trix_editor` helper:
+
+```ruby
+f.trix_editor :body
+```
+
+# Trix
+
+For the official Trix Github repository, go
+[here](https://github.com/basecamp/trix).
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/trix.
+Bug reports and pull requests are welcome on GitHub at https://github.com/maclover7/trix.
 
 ## License
 
