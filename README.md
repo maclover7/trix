@@ -41,7 +41,7 @@ forms, just use the `trix_editor` helper:
 f.trix_editor :body
 ```
 
-# Trix
+#3 Trix
 
 For the official Trix Github repository, go
 [here](https://github.com/basecamp/trix).
@@ -49,6 +49,12 @@ For the official Trix Github repository, go
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/maclover7/trix.
+
+## Upgrading Trix
+1. Update `vendor/assets/stylesheets/trix.css` and
+   `vendor/assets/javascripts/trix.js`.
+2. Push a new version up to Rubygems.org, make sure the version number
+   matches that of Trix itself!
 
 ## License
 
