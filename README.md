@@ -41,7 +41,7 @@ forms, just use the `trix_editor` helper:
 f.trix_editor :body
 ```
 
-#3 Trix
+## Trix
 
 For the official Trix Github repository, go
 [here](https://github.com/basecamp/trix).
