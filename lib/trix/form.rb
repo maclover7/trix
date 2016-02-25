@@ -12,6 +12,7 @@ module TrixEditorHelper
 
     attributes[:autofocus] = true if options[:autofocus]
     attributes[:placeholder] = options[:placeholder] if options[:placeholder]
+    attributes[:spellcheck] = options[:spellcheck] if options[:spellcheck]
     attributes[:input] = options[:input] || "trix_input_#{TrixEditorHelper.id += 1}"
     attributes[:toolbar] = options[:toolbar] if options[:toolbar]
 
