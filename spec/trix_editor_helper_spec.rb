@@ -1,3 +1,4 @@
+require 'spec_helper'
 require 'trix/form'
 
 describe TrixEditorHelper, type: :helper do
