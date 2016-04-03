@@ -41,6 +41,13 @@ forms, just use the `trix_editor` helper:
 f.trix_editor :body
 ```
 
+Or if you are using the [formtastic](https://github.com/justinfrench/formtastic) gem:
+
+```ruby
+f.input :body, as: :trix_editor
+```
+
+
 ## Trix
 
 For the official Trix Github repository, go
