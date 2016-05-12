@@ -58,10 +58,11 @@ For the official Trix Github repository, go
 Bug reports and pull requests are welcome on GitHub at https://github.com/maclover7/trix.
 
 ## Upgrading Trix
-1. Update `vendor/assets/stylesheets/trix.css` and
-   `vendor/assets/javascripts/trix.js`.
-2. Push a new version up to Rubygems.org, make sure the version number
-   matches that of Trix itself!
+1. Copy and paste Trix's `trix.js `to `vendor/assets/javascripts/trix.js`
+2. Copy and paste Trix's `trix.css `to `vendor/assets/stylesheets/trix.css`
+3. Update `lib/trix/version.rb` with the correct version number
+4. `git commit -am 'Bump to vVERSION'`
+4. `bundle exec rake release`
 
 ## License
 
