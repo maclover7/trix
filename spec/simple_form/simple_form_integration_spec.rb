@@ -21,4 +21,8 @@ describe Trix::SimpleForm::TrixEditorInput, type: :view do
   it 'outputs HTML containing the trix editor tag' do
     assert_select 'trix-editor[input="post_body"]'
   end
+
+  it 'outputs HTML containing the trix editor tag with a trix-content class' do
+    assert_select 'trix-editor.trix-content'
+  end
 end
