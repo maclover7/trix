@@ -1,0 +1,215 @@
+GIT
+  remote: https://github.com/rails/arel.git
+  revision: 67a51c62f4e19390cd8eb408596ca48bb0806362
+  branch: master
+  specs:
+    arel (8.0.0)
+
+GIT
+  remote: https://github.com/rails/rails.git
+  revision: 91d22b783275474464a03f6487f5c28b5dc803b3
+  branch: master
+  specs:
+    actioncable (5.2.0.alpha)
+      actionpack (= 5.2.0.alpha)
+      nio4r (~> 2.0)
+      websocket-driver (~> 0.6.1)
+    actionmailer (5.2.0.alpha)
+      actionpack (= 5.2.0.alpha)
+      actionview (= 5.2.0.alpha)
+      activejob (= 5.2.0.alpha)
+      mail (~> 2.5, >= 2.5.4)
+      rails-dom-testing (~> 2.0)
+    actionpack (5.2.0.alpha)
+      actionview (= 5.2.0.alpha)
+      activesupport (= 5.2.0.alpha)
+      rack (~> 2.0)
+      rack-test (~> 0.6.3)
+      rails-dom-testing (~> 2.0)
+      rails-html-sanitizer (~> 1.0, >= 1.0.2)
+    actionview (5.2.0.alpha)
+      activesupport (= 5.2.0.alpha)
+      builder (~> 3.1)
+      erubi (~> 1.4)
+      rails-dom-testing (~> 2.0)
+      rails-html-sanitizer (~> 1.0, >= 1.0.3)
+    activejob (5.2.0.alpha)
+      activesupport (= 5.2.0.alpha)
+      globalid (>= 0.3.6)
+    activemodel (5.2.0.alpha)
+      activesupport (= 5.2.0.alpha)
+    activerecord (5.2.0.alpha)
+      activemodel (= 5.2.0.alpha)
+      activesupport (= 5.2.0.alpha)
+      arel (~> 8.0)
+    activesupport (5.2.0.alpha)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (~> 0.7)
+      minitest (~> 5.1)
+      tzinfo (~> 1.1)
+    rails (5.2.0.alpha)
+      actioncable (= 5.2.0.alpha)
+      actionmailer (= 5.2.0.alpha)
+      actionpack (= 5.2.0.alpha)
+      actionview (= 5.2.0.alpha)
+      activejob (= 5.2.0.alpha)
+      activemodel (= 5.2.0.alpha)
+      activerecord (= 5.2.0.alpha)
+      activesupport (= 5.2.0.alpha)
+      bundler (>= 1.3.0)
+      railties (= 5.2.0.alpha)
+      sprockets-rails (>= 2.0.0)
+    railties (5.2.0.alpha)
+      actionpack (= 5.2.0.alpha)
+      activesupport (= 5.2.0.alpha)
+      method_source
+      rake (>= 0.8.7)
+      thor (>= 0.18.1, < 2.0)
+
+GIT
+  remote: https://github.com/rspec/rspec-core.git
+  revision: 0e0584f5c0624f244c9800f4a66b1256e496d14a
+  branch: master
+  specs:
+    rspec-core (3.7.0.pre)
+      rspec-support (= 3.7.0.pre)
+
+GIT
+  remote: https://github.com/rspec/rspec-expectations.git
+  revision: 5c4ca95b030788e2f62ee82335ed5836bd83c8e8
+  branch: master
+  specs:
+    rspec-expectations (3.7.0.pre)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (= 3.7.0.pre)
+
+GIT
+  remote: https://github.com/rspec/rspec-mocks.git
+  revision: 4847ef067b60e3725a9e4819b9d0ee0f5c5262eb
+  branch: master
+  specs:
+    rspec-mocks (3.7.0.pre)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (= 3.7.0.pre)
+
+GIT
+  remote: https://github.com/rspec/rspec-rails.git
+  revision: ac759a3691242b971ee8388ea77a8051d6fe15b4
+  branch: master
+  specs:
+    rspec-rails (3.7.0.pre)
+      actionpack (>= 3.0)
+      activesupport (>= 3.0)
+      railties (>= 3.0)
+      rspec-core (= 3.7.0.pre)
+      rspec-expectations (= 3.7.0.pre)
+      rspec-mocks (= 3.7.0.pre)
+      rspec-support (= 3.7.0.pre)
+
+GIT
+  remote: https://github.com/rspec/rspec-support.git
+  revision: 491e7236856d93103718a8e30e8b9a415fbad28b
+  branch: master
+  specs:
+    rspec-support (3.7.0.pre)
+
+PATH
+  remote: ..
+  specs:
+    trix (0.10.1)
+      rails
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    appraisal (2.2.0)
+      bundler
+      rake
+      thor (>= 0.14.0)
+    ast (2.3.0)
+    builder (3.2.3)
+    concurrent-ruby (1.0.5)
+    diff-lcs (1.3)
+    erubi (1.6.1)
+    formtastic (3.1.5)
+      actionpack (>= 3.2.13)
+    globalid (0.4.0)
+      activesupport (>= 4.2.0)
+    i18n (0.8.5)
+    loofah (2.0.3)
+      nokogiri (>= 1.5.9)
+    mail (2.6.6)
+      mime-types (>= 1.16, < 4)
+    method_source (0.8.2)
+    mime-types (3.1)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2016.0521)
+    mini_portile2 (2.2.0)
+    minitest (5.10.2)
+    nio4r (2.1.0)
+    nokogiri (1.8.0)
+      mini_portile2 (~> 2.2.0)
+    parallel (1.11.2)
+    parser (2.4.0.0)
+      ast (~> 2.2)
+    powerpack (0.1.1)
+    rack (2.0.3)
+    rack-test (0.6.3)
+      rack (>= 1.0)
+    rails-dom-testing (2.0.3)
+      activesupport (>= 4.2.0)
+      nokogiri (>= 1.6)
+    rails-html-sanitizer (1.0.3)
+      loofah (~> 2.0)
+    rainbow (2.2.2)
+      rake
+    rake (10.5.0)
+    rspec-activemodel-mocks (1.0.3)
+      activemodel (>= 3.0)
+      activesupport (>= 3.0)
+      rspec-mocks (>= 2.99, < 4.0)
+    rubocop (0.49.1)
+      parallel (~> 1.10)
+      parser (>= 2.3.3.1, < 3.0)
+      powerpack (~> 0.1)
+      rainbow (>= 1.99.1, < 3.0)
+      ruby-progressbar (~> 1.7)
+      unicode-display_width (~> 1.0, >= 1.0.1)
+    ruby-progressbar (1.8.1)
+    sprockets (3.7.1)
+      concurrent-ruby (~> 1.0)
+      rack (> 1, < 3)
+    sprockets-rails (3.2.0)
+      actionpack (>= 4.0)
+      activesupport (>= 4.0)
+      sprockets (>= 3.0.0)
+    thor (0.19.4)
+    thread_safe (0.3.6)
+    tzinfo (1.2.3)
+      thread_safe (~> 0.1)
+    unicode-display_width (1.3.0)
+    websocket-driver (0.6.5)
+      websocket-extensions (>= 0.1.0)
+    websocket-extensions (0.1.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  appraisal
+  arel!
+  bundler (~> 1.10)
+  formtastic (~> 3.0)
+  rails!
+  rake (~> 10.0)
+  rspec-activemodel-mocks
+  rspec-core!
+  rspec-expectations!
+  rspec-mocks!
+  rspec-rails!
+  rspec-support!
+  rubocop
+  trix!
+
+BUNDLED WITH
+   1.14.6
