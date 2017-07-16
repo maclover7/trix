@@ -34,7 +34,7 @@ Require Trix Javascript magic in `app/assets/javascripts/application.js`:
 //= require trix
 ```
 
-Finally, any place where you would like to use the Trix editor in your
+Any place where you would like to use the Trix editor in your
 forms, just use the `trix_editor` helper:
 
 ```ruby
@@ -45,6 +45,20 @@ Or if you are using the [formtastic](https://github.com/justinfrench/formtastic)
 
 ```ruby
 f.input :body, as: :trix_editor
+```
+
+
+Finally, when you want to display the contents of your form element:
+
+
+```ruby
+@post.fancyText.html_safe
+```
+
+or something more secure:
+
+```ruby
+sanitize @post.fancyText, tags: %w(strong em p br div ul ol li)
 ```
 
 
