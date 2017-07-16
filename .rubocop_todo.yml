@@ -53,3 +53,7 @@ Style/StringLiterals:
 # SupportedStyles: percent, brackets
 Style/SymbolArray:
   EnforcedStyle: brackets
+
+Metrics/MethodLength:
+  Exclude:
+    - 'lib/trix/form.rb'

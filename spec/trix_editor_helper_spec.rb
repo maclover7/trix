@@ -15,5 +15,23 @@ describe TrixEditorHelper, type: :helper do
     it 'returns a trix editor tag' do
       expect(helper.trix_editor_tag('text')).to include('trix-editor')
     end
+
+    it 'accepts a string class option' do
+      expect(helper.trix_editor_tag('text', nil, class: 'one two three')).to(
+        match(/<trix-editor class="formatted_content one two three"/)
+      )
+    end
+
+    it 'accepts a simple array class option' do
+      expect(helper.trix_editor_tag('text', nil, class: %w[one two three])).to(
+        match(/<trix-editor class="formatted_content one two three"/)
+      )
+    end
+
+    it 'accepts a mixed array class option' do
+      expect(helper.trix_editor_tag('text', nil, class: ['one two', :three])).to(
+        match(/<trix-editor class="formatted_content one two three"/)
+      )
+    end
   end
 end
