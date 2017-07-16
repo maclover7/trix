@@ -1,7 +1,7 @@
 require 'spec_helper'
 require 'formtastic/inputs/trix_editor_input'
 
-describe Trix do
+describe Trix, type: :integration do
   include FormtasticSpecHelper
 
   it 'renders the correct html markup' do
