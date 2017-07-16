@@ -26,4 +26,8 @@ module FormtasticSpecHelper
   def post_path(*)
     ''
   end
+
+  def _routes
+    Rails.application.routes
+  end
 end

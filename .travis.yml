@@ -9,7 +9,6 @@ gemfile:
   - gemfiles/rails_5.1.gemfile
   - gemfiles/rails_master.gemfile
 matrix:
-  allowed_failures:
-    -
-      gemfile: 'gemfiles/rails_master.gemfile'
+  allow_failures:
+    - gemfile: 'gemfiles/rails_master.gemfile'
 before_install: gem install bundler -v 1.11.2
