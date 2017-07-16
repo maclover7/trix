@@ -8,7 +8,8 @@ module TrixEditorHelper
   def trix_editor_tag(name, value = nil, options = {})
     options.symbolize_keys!
 
-    attributes = { class: "formatted_content #{options[:class]}".squish }
+    css_class = Array.wrap(options[:class]).join(' ')
+    attributes = { class: "formatted_content #{css_class}".squish }
 
     attributes[:autofocus] = true if options[:autofocus]
     attributes[:placeholder] = options[:placeholder] if options[:placeholder]
