@@ -4,5 +4,6 @@ rvm:
   - 2.3.0
 gemfile:
   - gemfiles/rails_4.2.gemfile
+  - gemfiles/rails_5.0.gemfile
   - gemfiles/rails_master.gemfile
 before_install: gem install bundler -v 1.11.2
