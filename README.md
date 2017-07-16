@@ -41,12 +41,11 @@ forms, just use the `trix_editor` helper:
 f.trix_editor :body
 ```
 
-Or if you are using the [formtastic](https://github.com/justinfrench/formtastic) gem:
+If you are using the [Formtastic](https://github.com/justinfrench/formtastic) gem or the [Simple Form](https://github.com/plataformatec/simple_form) gem, you can do this:
 
 ```ruby
 f.input :body, as: :trix_editor
 ```
-
 
 ## Trix
 
