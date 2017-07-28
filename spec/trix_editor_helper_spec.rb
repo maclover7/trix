@@ -33,5 +33,17 @@ describe TrixEditorHelper, type: :helper do
         match(/<trix-editor class="formatted_content trix-content one two three"/)
       )
     end
+
+    it 'accepts an autofocus option' do
+      expect(helper.trix_editor_tag('text', nil, autofocus: true)).to(
+        match(/<trix-editor.*autofocus="autofocus"/)
+      )
+    end
+
+    it 'accepts a placeholder option' do
+      expect(helper.trix_editor_tag('text', nil, placeholder: 'my text')).to(
+        match(/<trix-editor.*placeholder="my text"/)
+      )
+    end
   end
 end
