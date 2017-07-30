@@ -23,5 +23,8 @@ describe TrixEditorInput, type: :view do
 
     # Output HTML contains the editor tag
     assert_select 'trix-editor[input="post_body"]'
+
+    # Output editor tag has trix-content class
+    assert_select 'trix-editor.trix-content'
   end
 end
