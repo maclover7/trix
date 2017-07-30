@@ -47,6 +47,8 @@ If you are using the [Formtastic](https://github.com/justinfrench/formtastic) ge
 f.input :body, as: :trix_editor
 ```
 
+Attributes `autofocus` and `placeholder` set using `:input_html` are passed through to the trix-editor-tag.
+
 ## Trix
 
 For the official Trix Github repository, go
