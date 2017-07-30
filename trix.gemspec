@@ -25,6 +25,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'appraisal'
   spec.add_development_dependency 'bundler', '~> 1.10'
   spec.add_development_dependency 'formtastic', '~> 3.0'
+  spec.add_development_dependency 'minitest'
   spec.add_development_dependency 'simple_form', '~> 3.5'
   spec.add_development_dependency 'rake', '~> 10.0'
   spec.add_development_dependency 'rspec-rails'
