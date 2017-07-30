@@ -8,7 +8,7 @@ RSpec::Core::RakeTask.new(:spec)
 require 'rubocop/rake_task'
 RuboCop::RakeTask.new
 
-task default: %i(rubocop spec)
+task default: %i(rubocop spec test)
 
 require 'rake/testtask'
 Rake::TestTask.new(:test) do |t|
