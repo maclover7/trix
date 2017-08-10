@@ -20,7 +20,7 @@ module TrixEditorHelper
     editor_tag = content_tag('trix-editor', '', attributes)
     input_tag = hidden_field_tag(name, value, id: attributes[:input])
 
-    editor_tag + input_tag
+    input_tag + editor_tag
   end
 end
 
