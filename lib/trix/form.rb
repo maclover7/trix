@@ -10,12 +10,11 @@ module TrixEditorHelper
 
     css_class = Array.wrap(options[:class]).join(' ')
     attributes = { class: "formatted_content trix-content #{css_class}".squish }
-
     attributes[:autofocus] = true if options[:autofocus]
-    attributes[:placeholder] = options[:placeholder] if options[:placeholder]
-    attributes[:spellcheck] = options[:spellcheck] if options[:spellcheck]
     attributes[:input] = options[:input] || "trix_input_#{TrixEditorHelper.id += 1}"
-    attributes[:toolbar] = options[:toolbar] if options[:toolbar]
+
+    valid_html_options = [:placeholder, :spellcheck, :toolbar, :tabindex]
+    attributes.merge!(options.slice(*valid_html_options))
 
     editor_tag = content_tag('trix-editor', '', attributes)
     input_tag = hidden_field_tag(name, value, id: attributes[:input])

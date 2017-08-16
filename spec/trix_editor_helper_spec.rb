@@ -33,5 +33,35 @@ describe TrixEditorHelper, type: :helper do
         match(/<trix-editor class="formatted_content trix-content one two three"/)
       )
     end
+
+    it 'accepts spellcheck option' do
+      expect(helper.trix_editor_tag('text', nil, spellcheck: true)).to(
+        include('spellcheck="true"')
+      )
+    end
+
+    it 'accepts placeholder option' do
+      expect(helper.trix_editor_tag('text', nil, placeholder: 'Sample text')).to(
+        include('placeholder="Sample text"')
+      )
+    end
+
+    it 'accepts toolbar option' do
+      expect(helper.trix_editor_tag('text', nil, toolbar: true)).to(
+        include('toolbar="true"')
+      )
+    end
+
+    it 'accepts tabindex option' do
+      expect(helper.trix_editor_tag('text', nil, tabindex: 1)).to(
+        include('tabindex="1"')
+      )
+    end
+
+    it 'ignores non-whitelisted options' do
+      expect(helper.trix_editor_tag('text', nil, non_existing_option: 2)).not_to(
+        include('non_existing_option="2"')
+      )
+    end
   end
 end
