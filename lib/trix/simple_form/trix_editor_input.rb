@@ -2,7 +2,8 @@ module Trix
   module SimpleForm
     class TrixEditorInput < ::SimpleForm::Inputs::Base
       def input(_wrapper_options)
-        editor_tag = template.content_tag('trix-editor', '', input: input_class, class: 'trix-content')
+        trix_input = input_html_options[:id] || input_class
+        editor_tag = template.content_tag('trix-editor', '', input: trix_input, class: 'trix-content')
         hidden_field = @builder.hidden_field(attribute_name, input_html_options)
 
         template.content_tag('div', editor_tag + hidden_field, class: 'trix-editor-wrapper')
