@@ -10,6 +10,10 @@ appraise "rails-5.1" do
   gem "rails", "~> 5.1.0"
 end
 
+appraise "rails-5.2" do
+  gem "rails", "~> 5.2.0.rc"
+end
+
 appraise "rails-master" do
   gem "rails", git: "https://github.com/rails/rails.git", branch: "master"
   gem "arel", git: "https://github.com/rails/arel.git", branch: "master"
