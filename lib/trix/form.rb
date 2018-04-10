@@ -38,7 +38,7 @@ module ActionView
           options['input'] ||= dom_id(object, [options['id'], :trix_input].compact.join('_'))
           if Rails.version >= '5.2.0'
             value = options.delete('value') { value_before_type_cast }
-          else 
+          else
             value = value_before_type_cast(object)
           end
           trix_editor_tag(options.delete('name'), value, options)
