@@ -36,7 +36,8 @@ module ActionView
           options = @options.stringify_keys
           add_default_name_and_id(options)
           options['input'] ||= dom_id(object, [options['id'], :trix_input].compact.join('_'))
-          trix_editor_tag(options.delete('name'), value_before_type_cast(object), options)
+          value = Rails.version >= '5.2.0.rc' ? options.delete('value') { value_before_type_cast } : value_before_type_cast(object)
+          trix_editor_tag(options.delete('name'), value, options)
         end
       end
     end
