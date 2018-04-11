@@ -36,7 +36,7 @@ module ActionView
           options = @options.stringify_keys
           add_default_name_and_id(options)
           options['input'] ||= dom_id(object, [options['id'], :trix_input].compact.join('_'))
-          value = if Rails.version >= '5.2.0.rc'
+          value = if Rails.version >= '5.2.0'
                     options.delete('value') { value_before_type_cast }
                   else
                     value_before_type_cast(object)
