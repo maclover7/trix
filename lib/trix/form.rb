@@ -36,7 +36,15 @@ module ActionView
           options = @options.stringify_keys
           add_default_name_and_id(options)
           options['input'] ||= dom_id(object, [options['id'], :trix_input].compact.join('_'))
-          trix_editor_tag(options.delete('name'), value_before_type_cast(object), options)
+          trix_editor_tag(options.delete('name'), value_before_type_cast, options)
+        end
+
+        private
+
+        RAILS_VERSION_NUMBER = Rails::VERSION::STRING.to_f
+
+        def value_before_type_cast
+          RAILS_VERSION_NUMBER >= 5.2 ? super : super(object)
         end
       end
     end
