@@ -16,6 +16,24 @@ describe TrixEditorHelper, type: :helper do
       expect(helper.trix_editor_tag('text')).to include('trix-editor')
     end
 
+    it 'has a default input' do
+      expect(helper.trix_editor_tag('text', nil)).to(
+        include("input=\"trix_input_#{TrixEditorHelper.id}\"")
+      )
+    end
+
+    it 'accepts a custom input' do
+      expect(helper.trix_editor_tag('text', nil, input: 'my-input')).to(
+        include('input="my-input"')
+      )
+    end
+
+    it 'has default classes' do
+      expect(helper.trix_editor_tag('text', nil)).to(
+        match(/<trix-editor class="formatted_content trix-content"/)
+      )
+    end
+
     it 'accepts a string class option' do
       expect(helper.trix_editor_tag('text', nil, class: 'one two three')).to(
         match(/<trix-editor class="formatted_content trix-content one two three"/)
@@ -58,9 +76,15 @@ describe TrixEditorHelper, type: :helper do
       )
     end
 
-    it 'ignores non-whitelisted options' do
-      expect(helper.trix_editor_tag('text', nil, non_existing_option: 2)).not_to(
-        include('non_existing_option="2"')
+    it 'accepts data options' do
+      expect(helper.trix_editor_tag('text', nil, data: { coffee: :delicious })).to(
+        include('data-coffee="delicious"')
+      )
+    end
+
+    it 'accepts non-standard options' do
+      expect(helper.trix_editor_tag('text', nil, non_standard_option: 2)).to(
+        include('non_standard_option="2"')
       )
     end
   end
