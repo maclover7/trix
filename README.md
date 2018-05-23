@@ -41,6 +41,18 @@ forms, just use the `trix_editor` helper:
 f.trix_editor :body
 ```
 
+Any options passed to the `trix_editor` will render as HTML attributes on the `trix-editor` tag. For example:
+
+```ruby
+f.trix_editor :body, autofocus: true, data: { coffee: :delicious }
+```
+
+will render something like:
+
+```html
+<trix-editor autofocus="true" data-coffee="delicious">
+```
+
 If you are using the [Formtastic](https://github.com/justinfrench/formtastic) gem or the [Simple Form](https://github.com/plataformatec/simple_form) gem, you can do this:
 
 ```ruby
