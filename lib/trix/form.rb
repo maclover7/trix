@@ -8,13 +8,11 @@ module TrixEditorHelper
   def trix_editor_tag(name, value = nil, options = {})
     options.symbolize_keys!
 
-    css_class = Array.wrap(options[:class]).join(' ')
-    attributes = { class: "formatted_content trix-content #{css_class}".squish }
-    attributes[:autofocus] = true if options[:autofocus]
-    attributes[:input] = options[:input] || "trix_input_#{TrixEditorHelper.id += 1}"
-
-    valid_html_options = [:placeholder, :spellcheck, :toolbar, :tabindex]
-    attributes.merge!(options.slice(*valid_html_options))
+    css_class = Array.wrap(options.delete(:class)).join(' ')
+    attributes = {
+      class: "formatted_content trix-content #{css_class}".squish,
+      input: "trix_input_#{TrixEditorHelper.id += 1}"
+    }.merge(options)
 
     editor_tag = content_tag('trix-editor', '', attributes)
     input_tag = hidden_field_tag(name, value, id: attributes[:input])
