@@ -9,3 +9,5 @@
 /tmp/
 /gemfiles/*.gemfile.lock
 .ruby-version
+.rbenv
+/.idea/
