@@ -1,5 +1,5 @@
 require 'spec_helper'
-require 'trix/simple_form/trix_editor_input'
+require 'trix/simple_form/turbotrix_editor_input'
 
 describe Trix::SimpleForm::TrixEditorInput, type: :view do
   include SimpleFormSpecHelper
@@ -18,11 +18,11 @@ describe Trix::SimpleForm::TrixEditorInput, type: :view do
     assert_select format('input[type="hidden"][id="post_body"][value="%s"]', post.body)
   end
 
-  it 'outputs HTML containing the trix editor tag' do
-    assert_select 'trix-editor[input="post_body"]'
+  it 'outputs HTML containing the turbotrix editor tag' do
+    assert_select 'turbotrix-editor[input="post_body"]'
   end
 
-  it 'outputs HTML containing the trix editor tag with a trix-content class' do
-    assert_select 'trix-editor.trix-content'
+  it 'outputs HTML containing the turbotrix editor tag with a turbotrix-content class' do
+    assert_select 'turbotrix-editor.turbotrix-content'
   end
 end

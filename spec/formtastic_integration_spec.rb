@@ -1,5 +1,5 @@
 require 'spec_helper'
-require 'formtastic/inputs/trix_editor_input'
+require 'formtastic/inputs/turbotrix_editor_input'
 
 describe TurbotrixEditorInput, type: :view do
   include FormtasticSpecHelper
@@ -22,9 +22,9 @@ describe TurbotrixEditorInput, type: :view do
     assert_select format('input[type="hidden"][id="post_body"][value="%s"]', post.body)
 
     # Output HTML contains the editor tag
-    assert_select 'trix-editor[input="post_body"]'
+    assert_select 'turbotrix-editor[input="post_body"]'
 
-    # Output editor tag has trix-content class
-    assert_select 'trix-editor.trix-content'
+    # Output editor tag has turbotrix-content class
+    assert_select 'turbotrix-editor.turbotrix-content'
   end
 end

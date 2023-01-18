@@ -17,7 +17,7 @@ Please see the appropriate guide for your environment of choice:
 In your Gemfile you need to add the `trix` gem.
 
 ```ruby
-gem 'trix'
+gem 'turbotrix'
 ```
 
 `bundle install` and restart your server to make the files available through the pipeline.
@@ -31,7 +31,7 @@ Import Trix styles in `app/assets/stylesheets/application.css`:
 Require Trix Javascript magic in `app/assets/javascripts/application.js`:
 
 ```js
-//= require trix
+//= require turbotrix
 ```
 
 Finally, any place where you would like to use the Trix editor in your
