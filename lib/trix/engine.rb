@@ -1,15 +1,15 @@
-module Trix
+module Turbotrix
   class Engine < ::Rails::Engine
-    initializer 'trix.view_helpers' do
+    initializer 'turbotrix.view_helpers' do
       ActiveSupport.on_load(:action_view) do
-        require 'trix/form'
+        require 'turbotrix/form'
       end
 
       if defined? ::SimpleForm
-        require 'trix/simple_form/trix_editor_input'
+        require 'turbotrix/simple_form/turbotrix_editor_input'
 
         ::SimpleForm.setup do |config|
-          config.custom_inputs_namespaces << 'Trix::SimpleForm'
+          config.custom_inputs_namespaces << 'Turbotrix::SimpleForm'
         end
       end
     end

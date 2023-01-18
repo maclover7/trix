@@ -26,16 +26,16 @@ Style/Documentation:
   Exclude:
     - 'spec/**/*'
     - 'test/**/*'
-    - 'lib/formtastic/inputs/trix_editor_input.rb'
-    - 'lib/trix.rb'
-    - 'lib/trix/engine.rb'
-    - 'lib/trix/form.rb'
-    - 'lib/trix/simple_form/trix_editor_input.rb'
-    - 'lib/trix/version.rb'
+    - 'lib/formtastic/inputs/turbotrix_editor_input.rb'
+    - 'lib/turbotrix.rb'
+    - 'lib/turbotrix/engine.rb'
+    - 'lib/turbotrix/form.rb'
+    - 'lib/turbotrix/simple_form/turbotrix_editor_input.rb'
+    - 'lib/turbotrix/version.rb'
 
 # Offense count: 1
 # Cop supports --auto-correct.
 # Configuration parameters: PreferredDelimiters.
 Style/PercentLiteralDelimiters:
   Exclude:
-    - 'spec/trix_editor_helper_spec.rb'
+    - 'spec/turbotrix_editor_helper_spec.rb'

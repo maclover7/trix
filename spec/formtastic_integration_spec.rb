@@ -1,14 +1,14 @@
 require 'spec_helper'
 require 'formtastic/inputs/trix_editor_input'
 
-describe TrixEditorInput, type: :view do
+describe TurbotrixEditorInput, type: :view do
   include FormtasticSpecHelper
 
   let(:post) { mock_model('Post', body: 'body') }
 
   let(:form) do
     semantic_form_for(post) do |f|
-      f.input(:body, as: :trix_editor)
+      f.input(:body, as: :turbotrix_editor)
     end
   end
 

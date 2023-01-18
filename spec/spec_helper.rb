@@ -1,6 +1,6 @@
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 
-require 'trix'
+require 'turbotrix'
 require 'action_controller'
 require 'action_view'
 require 'rspec/rails'

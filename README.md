@@ -1,6 +1,6 @@
-# Trix
+# turbotrix
 
-[![Build Status](https://travis-ci.org/maclover7/trix.svg)](https://travis-ci.org/maclover7/trix)
+[![Build Status](https://travis-ci.org/maclover7/turbotrix.svg)](https://travis-ci.org/maclover7/turbotrix)
 
 Want to include Basecamp's awesome [Trix WYSIWYG
 editor](http://trix-editor.org) in your Ruby on Rails application?

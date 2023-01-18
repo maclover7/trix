@@ -1,6 +1,6 @@
-module Trix
+module Turbotrix
   module SimpleForm
-    class TrixEditorInput < ::SimpleForm::Inputs::Base
+    class TurbotrixEditorInput < ::SimpleForm::Inputs::Base
       def input(_wrapper_options)
         editor_tag = template.content_tag('trix-editor', '', input: input_class, class: 'trix-content')
         hidden_field = @builder.hidden_field(attribute_name, input_html_options)

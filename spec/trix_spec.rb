@@ -1,7 +1,7 @@
 require 'spec_helper'
 
-describe Trix do
+describe Turbotrix do
   it 'has a version number' do
-    expect(Trix::VERSION).not_to be nil
+    expect(Turbotrix::VERSION).not_to be nil
   end
 end

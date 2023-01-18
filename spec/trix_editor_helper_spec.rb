@@ -1,7 +1,7 @@
 require 'spec_helper'
-require 'trix/form'
+require 'turbotrix/form'
 
-describe TrixEditorHelper, type: :helper do
+describe TurbotrixEditorHelper, type: :helper do
   describe '#trix_editor' do
     it 'returns a trix editor tag' do
       blog = mock_model('Blog', text: 'Description')

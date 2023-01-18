@@ -1,11 +1,11 @@
 require 'action_view'
 require 'active_support/core_ext'
 
-module TrixEditorHelper
+module TurbotrixEditorHelper
   mattr_accessor(:id, instance_accessor: false)
   class_variable_set('@@id', 0)
 
-  def trix_editor_tag(name, value = nil, options = {})
+  def turbotrix_editor_tag(name, value = nil, options = {})
     options.symbolize_keys!
 
     css_class = Array.wrap(options[:class]).join(' ')
@@ -25,11 +25,11 @@ end
 
 module ActionView
   module Helpers
-    include TrixEditorHelper
+    include TurbotrixEditorHelper
 
     module Tags
-      class TrixEditor < Base
-        include TrixEditorHelper
+      class TurbotrixEditor < Base
+        include TurbotrixEditorHelper
         delegate :dom_id, to: :'@template_object'
 
         def render
@@ -42,14 +42,14 @@ module ActionView
     end
 
     module FormHelper
-      def trix_editor(object_name, method, options = {})
-        Tags::TrixEditor.new(object_name, method, self, options).render
+      def turbotrix_editor(object_name, method, options = {})
+        Tags::TurbotrixEditor.new(object_name, method, self, options).render
       end
     end
 
     class FormBuilder
-      def trix_editor(method, options = {})
-        @template.trix_editor(@object_name, method, objectify_options(options))
+      def turbotrix_editor(method, options = {})
+        @template.turbotrix_editor(@object_name, method, objectify_options(options))
       end
     end
   end
